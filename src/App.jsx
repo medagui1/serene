@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import {
   ProductChars,
-  CallToAction,
+  Footer,
   CustomerReviews,
   Hero,
   Nav,
@@ -42,7 +42,7 @@ function App() {
           <PopularNow />
         </section>
         <footer>
-          <CallToAction />
+          <Footer />
         </footer>
       </main>
     </>

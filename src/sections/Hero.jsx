@@ -3,8 +3,8 @@ import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <div className="flex justify-between items-center max-lg:flex-col-reverse">
-      <div className="lg:max-w-[350px] max-lg:m-10">
+    <div className="flex justify-between items-center max-lg:flex-col-reverse max-lg:justify-start max-lg:gap-10">
+      <div className="lg:max-w-[350px] max-lg:m-10 max-sm:m-2">
         <h1 className="uppercase tracking-[4px] font-semibold mb-8">beauty products</h1>
         <h2 className="uppercase text-[40px] font-bold mb-8 leading-[50px]">skin care made simple & affordable</h2>
         <p className="leading-relaxed text-gray mb-8 text-lg">
