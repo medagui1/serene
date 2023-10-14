@@ -2,8 +2,8 @@ import right_arrow from "../assets/icons/right_arrow.svg";
 
 const Footer = () => {
   return (
-    <div className="mb-8">
-      <div className="flex justify-between lg:items-end max-lg:flex-col gap-20 my-20">
+    <div className="mb-8]">
+      <div className="flex justify-between lg:items-end max-lg:flex-col gap-20 mt-40 mb-20">
         <div className="flex flex-col justify-start">
           <h1 className="font-arapey text-logo font-regular text-[120px] tracking-[28px] mb-[-40px]">
             SERENE
@@ -36,7 +36,7 @@ const Footer = () => {
           <p>011-554-8798-6556</p>
         </div>
         <p>&copy; Lotion skin care. All rights reserved.</p>
-        <p>Made with ❤️ by <a href="https://github.com/mohamedregragui">Medagui</a></p>
+        <p>Made with ❤️ by <a href="https://github.com/mohamedregragui/serene">Medagui</a></p>
       </div>
     </div>
   );
