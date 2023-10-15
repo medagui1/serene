@@ -1,5 +1,6 @@
 import { navLinks } from "../constants/navLinks";
 import hamburger from '../assets/icons/hamburger.svg'
+import Menu from "../components/Menu";
 
 const Nav = ({ isMenuShown, setIsMenuShown, cartOrders }) => {
   const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -12,9 +13,10 @@ const Nav = ({ isMenuShown, setIsMenuShown, cartOrders }) => {
         ))}
       </div>
       <h2 className="max-lg:hidden tracking-[3px] text-sm font-semibold">CART({cartOrders})</h2>
-      <div className="lg:hidden">
+      <div className="lg:hidden" onClick={() => setIsMenuShown(!isMenuShown)}>
         <img src={hamburger} alt="" width={24} height={24}/>
       </div>
+      
     </div>
   );
 };

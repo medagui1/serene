@@ -10,7 +10,7 @@ const ProductChars = () => {
       <div  className="lg:max-w-[450px] max-lg:m-10 max-sm:m-2">
         <div>
           {product_chars.map((product) => (
-            <div>
+            <div key={product.order}>
               <p className="text-sm">{product.order}</p>
               <h3 className={`uppercase text-4xl font-semibold mb-10 max-sm:mb-6 ${product.order === '02' && "text-[#EC361D]"}`}>
                 {product.characteristic}

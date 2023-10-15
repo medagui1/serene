@@ -10,14 +10,20 @@ import {
   PopularNow,
 } from "./sections/index";
 import "./App.css";
+import Menu from "./components/Menu";
 
 function App() {
   const [cartOrders, setCartOrders] = useState(0);
   const [isMenuShown, setIsMenuShown] = useState(false);
 
+  const root = document.getElementsByTagName("body")[0]
+  isMenuShown ? (root.style.overflow = 'hidden') : (root.style.overflow = 'auto');
+
   return (
-    <>
-      <main className="font-open-sans px-8">
+      <main className={`font-open-sans px-8 `}>
+        {isMenuShown && (
+          <Menu isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
+        )}
         <header id="home" className="">
           <nav className="">
             <Nav
@@ -26,18 +32,18 @@ function App() {
               cartOrders={cartOrders}
             />
           </nav>
-          <hr class="h-px border-0 dark:bg-gray-700 mb-4" />
+          <hr className="h-px border-0 dark:bg-gray-700 mb-4" />
           <Hero />
         </header>
-        <hr class="h-px border-0 dark:bg-gray-700 lg:mt-32 max-lg:mt-16 mb-6" />
+        <hr className="h-px border-0 dark:bg-gray-700 lg:mt-32 max-lg:mt-16 mb-6" />
         <section id="about-us">
           <ProductChars />
         </section>
-        <hr class="h-px border-0 dark:bg-gray-700 lg:mt-32 max-lg:mt-16 mb-6" />
+        <hr className="h-px border-0 dark:bg-gray-700 lg:mt-32 max-lg:mt-16 mb-6" />
         <section id="customer-reviews">
           <CustomerReviews />
         </section>
-        <hr class="h-px border-0 dark:bg-gray-700 lg:mt-32 max-lg:mt-16 mb-32" />
+        <hr className="h-px border-0 dark:bg-gray-700 lg:mt-32 max-lg:mt-16 mb-32" />
         <section>
           <PopularNow />
         </section>
@@ -45,7 +51,6 @@ function App() {
           <Footer />
         </footer>
       </main>
-    </>
   );
 }
 
