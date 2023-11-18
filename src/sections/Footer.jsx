@@ -2,13 +2,13 @@ import right_arrow from "../assets/icons/right_arrow.svg";
 
 const Footer = () => {
   return (
-    <div className="mb-8]">
+    <div className="mb-8">
       <div className="flex justify-between lg:items-end max-lg:flex-col gap-20 mt-40 mb-20">
         <div className="flex flex-col justify-start">
-          <h1 className="font-arapey text-logo font-regular text-[120px] tracking-[28px] mb-[-40px]">
+          <h1 className="font-arapey text-logo font-regular text-[120px] tracking-[28px] mb-[-40px] max-sm:text-7xl max-sm:mb-[-10px]">
             SERENE
           </h1>
-          <p className="uppercase text-logo tracking-[1.5px] text-sm">
+          <p className="uppercase text-logo tracking-[1.5px] text-sm max-sm:tracking-[0.1px]">
             skin care made simple & affordable
           </p>
         </div>
@@ -18,7 +18,7 @@ const Footer = () => {
             Subscribe to
             our newsletter
           </h2>
-          <div className="flex justify-between py-4 px-2 border-b-2 border-b-black w-[400px] max-sm:w-[300px]">
+          <div className="flex justify-between py-4 px-2 border-b-2 border-b-black w-[400px] max-sm:w-[280px]">
             <input
               type="text"
               name=""

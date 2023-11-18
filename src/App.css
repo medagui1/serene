@@ -2,3 +2,12 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+
+.menu-open {
+  right: 0;
+  transition: right 0.5s ease; /* You can adjust the transition duration */
+}
+.menu-close {
+  right: -80%;
+  transition: right 0.5s ease;
+}
